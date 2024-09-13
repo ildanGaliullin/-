@@ -1,0 +1,338 @@
+@font-face {
+  font-family: Montserat;
+  src: url(../assets/fonts/Montserrat-Bold.ttf);
+  font-weight: 800;
+}
+@font-face {
+  font-family: Montserat;
+  src: url(../assets/fonts/Montserrat-Light.ttf);
+  font-weight: 400;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Montserat;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+body {
+  background-color: #fff;
+}
+
+.container {
+  max-width: 1165px;
+  margin: 0 auto;
+}
+
+.header {
+  width: 100%;
+  position: absolute;
+}
+.header__wrap {
+  margin-top: 40px;
+  display: flex;
+  justify-content: space-between;
+}
+.header__elems {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+}
+.header__icons {
+  display: flex;
+  align-items: center;
+}
+.header__btns {
+  display: flex;
+  align-items: center;
+}
+.header__search {
+  margin-right: 40px;
+}
+
+.btn {
+  color: #fff;
+  font-size: 14px;
+  font-weight: 800;
+  background-color: #156963;
+  padding: 8px 33px;
+}
+.btn_w {
+  color: #156963;
+  background-color: #fff;
+}
+
+.main__wrap {
+  display: flex;
+}
+.main__block {
+  flex-direction: column;
+  padding: 81px 190px;
+}
+.main__btns {
+  display: flex;
+  flex-direction: row;
+  max-width: 586px;
+  max-height: 160px;
+}
+.main__texts {
+  max-width: 523px;
+}
+.main__title {
+  margin-top: 100px;
+  color: #156963;
+  font-size: 68px;
+  font-weight: 500;
+  margin-bottom: 24px;
+}
+.main__text {
+  color: #2C1500;
+  font-size: 18px;
+  font-weight: 400;
+  margin-bottom: 110px;
+}
+.main__btn {
+  width: 320px;
+  padding: 48px 38px 48px 38px;
+}
+.main__btn-subtitle {
+  margin-bottom: 12px;
+  display: flex;
+  position: relative;
+  color: #c2c2c2;
+  font-size: 24px;
+  font-weight: 500;
+}
+.main__btn-subtitle_p::before {
+  content: "";
+  display: block;
+  background: url(../assets/img/arrow-back-outline.svg);
+  width: 32px;
+  height: 32px;
+  margin-right: 9px;
+  color: #c2c2c2;
+}
+.main__btn-subtitle_n::after {
+  content: "";
+  display: block;
+  background: url(../assets/img/arrow-back-outline.svg);
+  width: 32px;
+  height: 32px;
+  margin-left: 9px;
+  transform: rotate(180deg);
+}
+.main__btn-text {
+  color: #c2c2c2;
+  font-size: 32px;
+  font-weight: 500;
+  max-width: 222px;
+}
+.main__btn-text_g {
+  color: #156963;
+}
+.main__btn-text_w {
+  color: #fff;
+}
+
+.advent {
+  padding: 142px 0;
+}
+.advent__row {
+  display: flex;
+  gap: 32px;
+}
+.advent__card {
+  padding: 16px 20px;
+  border: 1px solid #c2c2c2;
+}
+.advent__block {
+  display: flex;
+  gap: 19px;
+  margin-bottom: 16px;
+}
+.advent__title {
+  color: #156963;
+  font-size: 16px;
+  font-weight: 800;
+  max-width: 108px;
+}
+
+.featuredplants__row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 16px;
+}
+.featuredplants__row_h1 {
+  font-size: 20px;
+  font-weight: 800;
+}
+.featuredplants__row_select {
+  padding: 8px 12px 8px 12px;
+}
+.featuredplants__block {
+  margin-top: 24px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.featuredplants__card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 217px;
+  max-height: 261px;
+}
+.featuredplants__card__text-main {
+  margin-top: 16px;
+  font-size: 16px;
+  font-weight: 500;
+}
+.featuredplants__card__text-price {
+  margin-top: 8px;
+  font-size: 16px;
+  font-weight: 800;
+}
+
+.buyplants {
+  margin-top: 80px;
+}
+.buyplants__wrap {
+  display: flex;
+  flex-direction: row;
+}
+.buyplants__text {
+  padding-bottom: 8px;
+}
+.buyplants__text_h1 {
+  font-size: 40px;
+  font-weight: 800;
+  margin-bottom: 16px;
+  color: #2C1500;
+}
+.buyplants__text_p {
+  font-size: 16px;
+  font-weight: 500;
+  color: #2C1500;
+  margin-bottom: 74px;
+}
+.buyplants__text_img {
+  max-width: 568px;
+  max-height: 250px;
+}
+.buyplants__img {
+  max-height: 602px;
+}
+
+.favoriteplant {
+  margin-top: 80px;
+  max-height: 360px;
+}
+.favoriteplant__main {
+  padding: 97px 88px 488px 88px;
+  background: url(../assets/img/bg-get.jpg);
+}
+.favoriteplant__main__title {
+  color: #2C1500;
+  font-size: 40px;
+  font-weight: 800;
+  max-width: 585px;
+  margin-bottom: 32px;
+}
+.favoriteplant__main__btn {
+  margin-top: 20px;
+}
+
+.footer_hr {
+  margin-top: 80px;
+  color: #156963;
+}
+
+.footer {
+  margin-top: 60px;
+}
+.footer__wrap {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.footer__plants {
+  max-width: 282px;
+}
+.footer__plants_h1 {
+  font-size: 24px;
+  font-weight: 500;
+  color: #156963;
+  letter-spacing: 5px;
+  margin-bottom: 24px;
+  text-transform: uppercase;
+}
+.footer__plants_h2 {
+  font-size: 16px;
+  font-weight: 800;
+  margin-bottom: 10px;
+}
+.footer__plants_h3 {
+  font-size: 16px;
+  font-weight: 500;
+}
+.footer__per {
+  max-width: 95px;
+  max-height: 82px;
+}
+.footer__per_p1 {
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+.footer__per_p2 {
+  font-size: 13px;
+  margin-bottom: 14px;
+}
+.footer__per_p3 {
+  font-size: 13px;
+  margin-bottom: 14px;
+}
+.footer__prod {
+  max-width: 95px;
+  max-height: 82px;
+}
+.footer__prod_f1 {
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+.footer__prod_f2 {
+  font-size: 13px;
+  margin-bottom: 14px;
+}
+.footer__prod_f3 {
+  font-size: 13px;
+  margin-bottom: 14px;
+}
+.footer__email {
+  max-width: 234px;
+}
+.footer__email_h1 {
+  font-size: 16px;
+  font-weight: 800;
+  margin-bottom: 14px;
+}
+.footer__email_search {
+  width: 234px;
+  padding: 13px 8px 13px 8px;
+  margin-bottom: 22px;
+}
+.footer__email__btn {
+  font-size: 8px;
+  font-weight: 500;
+  padding: 4px 12px;
+  max-width: 51px;
+  max-height: 22px;
+}

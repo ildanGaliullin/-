@@ -1,0 +1,352 @@
+@font-face {
+    font-family: Montserat;
+    src: url(../assets/fonts/Montserrat-Bold.ttf);
+    font-weight: 800;
+}
+
+@font-face {
+    font-family: Montserat;
+    src: url(../assets/fonts/Montserrat-Light.ttf);
+    font-weight: 400;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Montserat;    
+}
+
+a{
+    text-decoration: none;
+}
+
+li{
+    list-style: none;
+}
+
+
+body{
+    background-color: #fff;
+}
+// HEADER // 
+
+.container{
+    max-width: 1165px;
+    margin: 0 auto;
+}
+
+.header{
+    width: 100%;
+    
+    position: absolute;
+
+    &__wrap{
+        margin-top: 40px;
+        display: flex;
+        justify-content: space-between;
+    }
+    &__elems{
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+    }
+    &__icons{
+        display: flex;
+        align-items: center;
+    }
+    &__btns{
+        display: flex;
+        align-items: center;
+    }
+    &__search{
+        margin-right: 40px;
+    }
+}
+
+.btn{
+    color: #fff;
+    font-size: 14px;
+    font-weight: 800;
+    background-color: #156963;
+    padding: 8px 33px;
+    &_w{
+        color: #156963;
+        background-color: #fff;;
+    }
+}
+
+.main{
+    &__wrap{
+        display: flex;
+    }
+    &__block{
+        flex-direction: column;
+        padding: 81px 190px;
+    }
+    &__btns{
+        display: flex;
+        flex-direction: row;
+        max-width: 586px;
+        max-height: 160px;
+    }
+    &__texts{
+        max-width: 523px;
+    }
+    &__title{
+        margin-top: 100px;
+        color: #156963;
+        font-size: 68px;
+        font-weight: 500;
+        margin-bottom: 24px;
+    }
+    &__text{
+        color: #2C1500;
+        font-size: 18px;
+        font-weight: 400;
+        margin-bottom: 110px;
+    }
+    &__btn{       
+        width: 320px;
+        padding: 48px 38px 48px 38px;      
+        &-subtitle{
+            margin-bottom: 12px;
+            display: flex;
+            position: relative;
+            color: #c2c2c2;
+            font-size: 24px;
+            font-weight: 500;
+            &_p::before{
+                content: '';
+                display: block;
+                background: url(../assets/img/arrow-back-outline.svg);
+                width: 32px;
+                height: 32px;
+                margin-right: 9px;
+                color: #c2c2c2;
+                
+                
+            }
+            &_n::after{
+                content: '';
+                display: block;
+                background: url(../assets/img/arrow-back-outline.svg);
+                width: 32px;
+                height: 32px;
+                margin-left: 9px;
+                transform: rotate(180deg);
+            }
+        }
+        &-text{
+            color: #c2c2c2;
+            font-size: 32px;
+            font-weight: 500;
+            max-width: 222px;
+            &_g{
+                color: #156963;
+            }
+            &_w{
+                color: #fff;
+            }
+        }   
+    }
+}
+
+.advent{
+    padding: 142px 0;
+    &__row{
+        display: flex;
+        gap: 32px;
+    }
+    &__card{
+        padding: 16px 20px;
+        border:1px solid#c2c2c2;
+    }
+    &__block{
+        display: flex;
+        gap: 19px;
+        margin-bottom: 16px;
+    }
+    &__title{
+        color: #156963;
+        font-size: 16px;
+        font-weight: 800;
+        max-width: 108px;
+    }
+}
+
+.featuredplants{
+    &__row{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin-bottom: 16px;
+        &_h1{
+            font-size: 20px;
+            font-weight: 800;
+        }
+        &_select{
+            padding: 8px 12px 8px 12px;
+        }
+    }
+    &__block{
+        margin-top: 24px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    &__card{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        max-width: 217px;
+        max-height: 261px;
+        &__text-main{
+            margin-top: 16px;
+            font-size: 16px;
+            font-weight: 500;
+        }
+        &__text-price{
+            margin-top: 8px;
+            font-size: 16px;
+            font-weight: 800;
+        }
+    }
+}
+
+.buyplants{
+    margin-top: 80px;
+    &__wrap{
+        display: flex;
+        flex-direction: row;    
+    }
+    &__text{
+        padding-bottom: 8px;
+        &_h1{
+            font-size: 40px;
+            font-weight: 800;
+            margin-bottom: 16px;
+            color: #2C1500;
+        }
+        &_p{
+            font-size: 16px;
+            font-weight: 500;
+            color: #2C1500;
+            margin-bottom: 74px;
+        }
+        &_img{
+            max-width: 568px;
+            max-height: 250px;
+        }
+    }
+    &__img{
+        max-height: 602px;
+    }
+}
+
+.favoriteplant{
+    margin-top: 80px;
+    max-height: 360px;
+    &__main{
+        padding: 97px 88px 488px 88px;
+        background: url(../assets/img/bg-get.jpg);
+        &__title{
+            color: #2C1500;
+            font-size: 40px;
+            font-weight: 800;
+            max-width: 585px;
+            margin-bottom: 32px;
+        }
+        &__btn{
+            margin-top: 20px;
+        }
+    }
+      
+}
+
+.footer_hr{
+    margin-top: 80px;
+    color: #156963;
+}
+
+.footer{
+    margin-top: 60px;
+    &__wrap{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    &__plants{
+        max-width: 282px;
+        &_h1{
+            font-size: 24px;
+            font-weight: 500;
+            color: #156963;
+            letter-spacing: 5px;
+            margin-bottom: 24px;
+            text-transform: uppercase;
+        }
+        &_h2{
+            font-size: 16px;
+            font-weight: 800;
+            margin-bottom: 10px;
+        }
+        &_h3{
+            font-size: 16px;
+            font-weight: 500;
+        }
+    }
+    &__per{
+        max-width: 95px;
+        max-height: 82px;
+        &_p1{
+            font-size: 16px;
+            margin-bottom: 20px;
+        }
+        &_p2{
+            font-size: 13px;
+            margin-bottom: 14px;
+        }
+        &_p3{
+           font-size: 13px;
+           margin-bottom: 14px;
+        }
+    }
+    &__prod{
+        max-width: 95px;
+        max-height: 82px;
+        &_f1{
+            font-size: 16px;
+            margin-bottom: 20px;
+        }
+        &_f2{
+            font-size: 13px;
+            margin-bottom: 14px;
+
+        }
+        &_f3{
+            font-size: 13px;
+           margin-bottom: 14px;
+        }
+    }
+    &__email{
+        max-width: 234px;
+        &_h1{
+            font-size: 16px;
+            font-weight: 800;
+            margin-bottom: 14px;
+        }
+        &_search{
+            width: 234px;
+            padding: 13px 8px 13px 8px;
+            margin-bottom: 22px;
+        }
+        &__btn{
+            font-size: 8px;
+            font-weight: 500;
+            padding: 4px 12px;
+            max-width: 51px;
+            max-height: 22px;
+        }
+    }
+}
